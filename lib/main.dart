@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.amber,
           centerTitle: true,
         ),
-        body: Latihansatu(),
+        body: ContainerLatihan(),
       ),
     );
   }
