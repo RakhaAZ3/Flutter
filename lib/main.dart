@@ -4,6 +4,14 @@ import 'package:belajar_flutter/row_column/ColumnWidget.dart';
 import 'package:belajar_flutter/row_column/LatihanDua.dart';
 import 'package:belajar_flutter/row_column/LatihanSatu.dart';
 import 'package:belajar_flutter/row_column/RowColumnWidget.dart';
+import 'package:belajar_flutter/sized_expanded_stack/ExpandedWidget.dart';
+import 'package:belajar_flutter/sized_expanded_stack/LatihanEmpat.dart';
+import 'package:belajar_flutter/sized_expanded_stack/LatihanSatu.dart';
+import 'package:belajar_flutter/sized_expanded_stack/LayoutDua.dart';
+import 'package:belajar_flutter/sized_expanded_stack/LayoutEmpat.dart';
+import 'package:belajar_flutter/sized_expanded_stack/LayoutSatu.dart';
+import 'package:belajar_flutter/sized_expanded_stack/SizedBoxWidget.dart';
+import 'package:belajar_flutter/sized_expanded_stack/StackWidget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,12 +26,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter App"),
-          backgroundColor: Colors.amber,
-          centerTitle: true,
-        ),
-        body: ContainerLatihan(),
+        // appBar: AppBar(
+        //   title: Text("Flutter App"),
+        //   backgroundColor: Colors.amber,
+        //   centerTitle: true,
+        // ),
+        body: Latihanempat(),
       ),
     );
   }
