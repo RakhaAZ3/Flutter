@@ -12,7 +12,14 @@ class Latihanempat extends StatelessWidget {
             height: 72,
             padding: EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.blue,
+              gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                const Color.fromARGB(255, 133, 198, 252),
+                Colors.blue,
+              ],
+            ),
               borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20.0), bottomRight: Radius.circular(20.0)),
               boxShadow: [
                 BoxShadow(
@@ -63,30 +70,62 @@ class Latihanempat extends StatelessWidget {
           height: 200,
           width: double.infinity,
           margin: EdgeInsets.all(5),
+          padding: EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: Colors.blue,
-            border: Border.all(
-              color:  const Color.fromARGB(255, 5, 68, 110),
-              width: 5,
-            ),
+            gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.blue,
+              Color.fromARGB(255, 133, 198, 252),
+            ],
+          ),
+            boxShadow: [
+                BoxShadow(
+                  color: Colors.black,
+                  blurRadius: 6,)],
             borderRadius: BorderRadius.circular(15),
           ),
-          child: Row(
-            children: [
-              Column(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    height: 25,
-                    width: 75,
-                    margin: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 116, 115, 111),
-                      borderRadius: BorderRadius.circular(15),
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height: 30,
+                            width: 100,
+                            decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 137, 137, 137),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Latihan 4",
+                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white),
+                              ),
+                            ),
+                          ),
+                        Icon(Icons.school, color: Colors.white, size: 50),
+                        ],
                   ),
+                Text(
+                    "Belajar Flutter !",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                    ),
+                    Text(
+                  'Belajar flutter bersama pak Kace',
+                  style: TextStyle(color: Colors.white),
+                ),
+                SizedBox(height: 20),
+                SizedBox(
+            height: 30,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text("Mulai Belajar", style: TextStyle(color: Colors.blue)),
+            ),
+          ),
                 ],
-              ),
-            ],
           ),
         )
         ],

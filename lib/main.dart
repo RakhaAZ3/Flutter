@@ -1,5 +1,14 @@
+import 'package:belajar_flutter/Latihan/ig.dart';
 import 'package:belajar_flutter/container/ContainerLatihan.dart';
 import 'package:belajar_flutter/container/ContainerSatu.dart';
+import 'package:belajar_flutter/grid_view/GridViewBuilder.dart';
+import 'package:belajar_flutter/grid_view/GridViewCount.dart';
+import 'package:belajar_flutter/grid_view/GridViewExtent.dart';
+import 'package:belajar_flutter/list_view/ListViewBuilder.dart';
+import 'package:belajar_flutter/list_view/ListViewHorizontal.dart';
+import 'package:belajar_flutter/list_view/ListViewCustom.dart';
+import 'package:belajar_flutter/list_view/ListViewSimple.dart';
+import 'package:belajar_flutter/list_view/ListViewSeparated.dart';
 import 'package:belajar_flutter/row_column/ColumnWidget.dart';
 import 'package:belajar_flutter/row_column/LatihanDua.dart';
 import 'package:belajar_flutter/row_column/LatihanSatu.dart';
@@ -31,7 +40,7 @@ class MyApp extends StatelessWidget {
         //   backgroundColor: Colors.amber,
         //   centerTitle: true,
         // ),
-        body: Latihanempat(),
+        body: latihan(),
       ),
     );
   }
