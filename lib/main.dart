@@ -4,6 +4,9 @@ import 'package:belajar_flutter/container/ContainerSatu.dart';
 import 'package:belajar_flutter/grid_view/GridViewBuilder.dart';
 import 'package:belajar_flutter/grid_view/GridViewCount.dart';
 import 'package:belajar_flutter/grid_view/GridViewExtent.dart';
+import 'package:belajar_flutter/list%20&%20grid/detailScreen.dart';
+import 'package:belajar_flutter/list%20&%20grid/grid.dart';
+import 'package:belajar_flutter/list%20&%20grid/list-screen.dart';
 import 'package:belajar_flutter/list_view/ListViewBuilder.dart';
 import 'package:belajar_flutter/list_view/ListViewHorizontal.dart';
 import 'package:belajar_flutter/list_view/ListViewCustom.dart';
@@ -36,9 +39,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         // appBar: AppBar(
-        //   title: Text("Flutter App"),
-        //   backgroundColor: Colors.amber,
-        //   centerTitle: true,
+          // title: Text("Flutter App"),
+          // backgroundColor: Colors.white,
+          // centerTitle: true,
         // ),
         body: latihan(),
       ),
