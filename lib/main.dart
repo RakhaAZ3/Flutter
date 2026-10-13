@@ -12,6 +12,7 @@ import 'package:belajar_flutter/list_view/ListViewHorizontal.dart';
 import 'package:belajar_flutter/list_view/ListViewCustom.dart';
 import 'package:belajar_flutter/list_view/ListViewSimple.dart';
 import 'package:belajar_flutter/list_view/ListViewSeparated.dart';
+import 'package:belajar_flutter/routes/app_routes.dart';
 import 'package:belajar_flutter/row_column/ColumnWidget.dart';
 import 'package:belajar_flutter/row_column/LatihanDua.dart';
 import 'package:belajar_flutter/row_column/LatihanSatu.dart';
@@ -27,24 +28,26 @@ import 'package:belajar_flutter/sized_expanded_stack/StackWidget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  // const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
+      initialRoute: '/',
+      routes: AppRoutes.routes,
+      // home: Scaffold(
         // appBar: AppBar(
           // title: Text("Flutter App"),
           // backgroundColor: Colors.white,
           // centerTitle: true,
         // ),
-        body: latihan(),
-      ),
+        // body: latihan(),
+      // ),
     );
   }
 }

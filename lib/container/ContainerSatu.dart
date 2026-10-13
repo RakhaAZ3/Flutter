@@ -5,7 +5,9 @@ class ContainerSatu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return  Scaffold(
+      appBar : AppBar ( title : Text ( 'Simple ListView' )),
+      body: Container(
       height: double.infinity,
       width: double.infinity,
       padding: EdgeInsets.all(10),
@@ -21,7 +23,8 @@ class ContainerSatu extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      child: Text("Lorem Ipsum sit Amet Dolor"),
+      child: Text("Lorem Ipsum sit Dolor Amet"),
+      ),
     );
   }
 }

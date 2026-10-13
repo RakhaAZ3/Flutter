@@ -4,8 +4,7 @@ class  GridViewCount  extends  StatelessWidget  {
   const  GridViewCount ({Key? key}) : super ( key : key); 
   @override 
   Widget build (BuildContext context) { 
-    return  MaterialApp ( 
-      home : Scaffold ( 
+    return  Scaffold ( 
         appBar : AppBar ( title : const  Text ( 'Contoh GridView.count' )), 
         body : GridView. count ( 
           crossAxisCount : 2 , // Jumlah kolom 
@@ -23,7 +22,7 @@ class  GridViewCount  extends  StatelessWidget  {
                 ) 
               , 
             ),         ) 
-          , ),       ),     )
+          , ),       ),     
     );   
           } 
           }

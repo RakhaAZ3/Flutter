@@ -5,7 +5,9 @@ class ContainerLatihan extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
+      appBar : AppBar ( title : Text ( 'Simple ListView' )),
+      body: Container(
       height: 200,
       width: 300,
       margin: EdgeInsets.all(20),
@@ -38,6 +40,7 @@ class ContainerLatihan extends StatelessWidget {
         "XII RPL 1",
         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
       ),
+      )
       )
     );
   }

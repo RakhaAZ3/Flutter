@@ -4,8 +4,7 @@ class GridViewCustom extends StatelessWidget {
   const GridViewCustom({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(title: const Text('GridView with Images')),
         body: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -20,7 +19,7 @@ class GridViewCustom extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(
                   image: NetworkImage(
-                    'https://source.unsplash.com/random?sig=$index',
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjR8D4uxOZDle8V77TvmkYid8fuiKs2NzL4EiE4o4Gvg&s=10',
                   ),
                   fit: BoxFit.cover,
                 ),
@@ -28,7 +27,6 @@ class GridViewCustom extends StatelessWidget {
             );
           },
         ),
-      ),
     );
   }
 }

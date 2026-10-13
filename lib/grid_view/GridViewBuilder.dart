@@ -4,8 +4,7 @@ class  GridViewBuilder  extends  StatelessWidget  {
   const  GridViewBuilder ({Key? key}) : super ( key : key); 
   @override 
   Widget build (BuildContext context) { 
-    return  MaterialApp ( 
-      home : Scaffold ( 
+    return  Scaffold ( 
         appBar : AppBar ( title : const  Text ( 'Contoh GridView.builder' )), 
         body : GridView. builder ( 
           gridDelegate : const  SliverGridDelegateWithFixedCrossAxisCount ( 
@@ -25,8 +24,7 @@ class  GridViewBuilder  extends  StatelessWidget  {
               ), 
             ); 
           }, 
-        ), 
-      ), 
+        ),  
     ); 
   } 
 }
