@@ -1,5 +1,6 @@
 import 'package:belajar_flutter/container/ContainerLatihan.dart';
 import 'package:belajar_flutter/container/ContainerSatu.dart';
+import 'package:belajar_flutter/form/form.dart';
 import 'package:belajar_flutter/grid_view/GridViewBuilder.dart';
 import 'package:belajar_flutter/grid_view/GridViewCount.dart';
 import 'package:belajar_flutter/grid_view/GridViewCustom.dart';
@@ -17,6 +18,7 @@ class AppRoutes{
   static const gridviewbuilder = '/gridviewbuilder';
   static const gridviewcount = '/gridviewcount';
   static const gridviewcustom = '/gridviewcustom';
+  static const form = '/form';
 
   static Map<String, WidgetBuilder> routes ={
     home:(context) => HomePage(),
@@ -27,5 +29,6 @@ class AppRoutes{
     gridviewbuilder:(context) => GridViewBuilder(),
     gridviewcount:(context) => GridViewCount(),
     gridviewcustom:(context) => GridViewCustom(),
+    form:(context) => formulir(),
   };
 }
