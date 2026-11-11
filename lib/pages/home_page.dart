@@ -52,6 +52,12 @@ class HomePage extends StatelessWidget {
             child: Text('Grid Custom'),
             ),
             SizedBox(height: 10),
+            ElevatedButton(onPressed: (){
+              Navigator.pushNamed(context, '/toko');
+            },
+            child: Text('Toko'),
+            ),
+            SizedBox(height: 10),
           ],
         ),
       ),
