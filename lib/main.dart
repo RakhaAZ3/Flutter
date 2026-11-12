@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/toko',
+      initialRoute: '/comment',
       routes: AppRoutes.routes,
       // home: Scaffold(
         // appBar: AppBar(

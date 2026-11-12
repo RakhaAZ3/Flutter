@@ -9,6 +9,8 @@ import 'package:belajar_flutter/grid_view/GridViewCount.dart';
 import 'package:belajar_flutter/grid_view/GridViewCustom.dart';
 import 'package:belajar_flutter/list_view/ListViewSimple.dart';
 import 'package:belajar_flutter/pages/about_page.dart';
+import 'package:belajar_flutter/pages/comment_page.dart';
+import 'package:belajar_flutter/pages/fetch_api_page.dart';
 import 'package:belajar_flutter/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +28,8 @@ class AppRoutes{
   static const form1 = '/form1';
   static const latihan = '/latihan';
   static const toko = '/toko';
+  static const album = '/album';
+  static const comment = '/comment';
 
   static Map<String, WidgetBuilder> routes ={
     home:(context) => HomePage(),
@@ -40,5 +44,7 @@ class AppRoutes{
     form1:(context) => BelajarForm(),
     latihan:(context) => latihan_input(),
     toko:(context) => DaftarItemPage(),
+    album:(context) => AlbumPage(),
+    comment:(context) => CommentPage(),
   };
 }
